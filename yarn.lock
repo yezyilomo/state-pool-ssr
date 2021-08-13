@@ -844,6 +844,11 @@ image-size@1.0.0:
   dependencies:
     queue "6.0.2"
 
+immer@>=6.0.3:
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.5.tgz#a7154f34fe7064f15f00554cc94c66cc0bf453ec"
+  integrity sha512-2WuIehr2y4lmYz9gaQzetPR2ECniCifk4ORaQbU3g5EalLt+0IVTosEPJ5BoYl/75ky2mivzdRzV8wWgQGOSYQ==
+
 inherits@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
@@ -1589,6 +1594,13 @@ stacktrace-parser@0.1.10:
   integrity sha512-KJP1OCML99+8fhOHxwwzyWrlUuVX5GQ0ZpJTd1DFXhdkrvg1szxfHhawXUZ3g9TkXORQd4/WG68jMlQZ2p8wlg==
   dependencies:
     type-fest "^0.7.1"
+
+state-pool@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/state-pool/-/state-pool-0.6.0.tgz#ec805e3b02f4321bf9371d378700c2b5bda40f46"
+  integrity sha512-oE5fMyL6wxoZDljzcoOy/TCkTmjK/v4JxYM+ENJRz2Q0xviI1q384J4AJtOdAnv9yWV+7PUQDDZjarEh2XBB5A==
+  dependencies:
+    immer ">=6.0.3"
 
 "statuses@>= 1.5.0 < 2":
   version "1.5.0"
