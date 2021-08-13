@@ -1,5 +1,5 @@
 import { useGlobalState } from 'state-pool'
-import SSR from './ssr';
+import SSR from '../ssr';
 
 
 function lastUpdateLocation() {
