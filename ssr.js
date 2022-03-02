@@ -1,8 +1,5 @@
-
-// SSR.js
-
 import React from 'react';
-import { store } from 'state-pool';
+import store from './store';
 
 
 const PRELOADED_STATE = '__PRELOADED_STATE__';
@@ -24,16 +21,16 @@ function initializeStore(initializeStoreNormally) {
     else {
         // We're on server side or on client side without server state
         // so we initialize the store normally
-        initializeStoreNormally(store);
+        initializeStoreNormally();
     }
 }
 
 
 function getServerStatesToSendToClient() {
     let states = {}
-    for (let key in store.value) {
-        states[key] = store.value[key].getValue();
-    }
+    store.value.forEach((state, key) => {
+        states[key] = state.getValue();
+    })
     return JSON.stringify(states);
 }
 

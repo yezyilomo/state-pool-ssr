@@ -1,4 +1,4 @@
-import { useGlobalState } from 'state-pool'
+import store from '../store';
 import SSR from '../ssr';
 
 
@@ -9,7 +9,7 @@ function lastUpdateLocation() {
     return "server side"
 }
 
-SSR.initializeStore((store) => {
+SSR.initializeStore(() => {
     store.setState("state", {
         "count": 0,
         "lastUpdateLocation": lastUpdateLocation()
@@ -18,7 +18,7 @@ SSR.initializeStore((store) => {
 
 
 function Counter() {
-    const [state, setState] = useGlobalState("state");
+    const [state, setState] = store.useState("state");
 
     const setCount = (count) => {
         setState({

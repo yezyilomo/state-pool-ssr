@@ -1757,10 +1757,10 @@ stacktrace-parser@0.1.10:
   dependencies:
     type-fest "^0.7.1"
 
-state-pool@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/state-pool/-/state-pool-0.6.0.tgz#ec805e3b02f4321bf9371d378700c2b5bda40f46"
-  integrity sha512-oE5fMyL6wxoZDljzcoOy/TCkTmjK/v4JxYM+ENJRz2Q0xviI1q384J4AJtOdAnv9yWV+7PUQDDZjarEh2XBB5A==
+state-pool@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/state-pool/-/state-pool-0.7.1.tgz#a46a4fe10ff405c99a2bd27d2dcbc5942cb3cfb0"
+  integrity sha512-216KQC0Aos0q9VHQUzgJtCntFk2gSXgXs36aDJ9iCFswieKPf9o55wwDH2fdl9H2MM1CUfdv32cSLgv2mBBpMQ==
   dependencies:
     immer ">=6.0.3"
 
